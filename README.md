@@ -50,7 +50,7 @@
     - autocrlf = input // mac
 
   - Help
-    - `git config -h`
+    - `git [command name] -h`
 
 ## 基本命令
 
@@ -117,6 +117,30 @@
 - log reverse
 
   `git log --oneline --reverse`
+
+- show 显示 commit 内容
+
+  `git show HEAD~1:.gitignore`
+
+- show 显示 所有 变更内容
+
+  `git ls-tree HEAD~1`
+
+- unstaging with restore
+
+  > 注意版本
+
+  `git restore --staged file-name`
+
+- 放弃 working 文件变更
+
+  `git restore file-name`
+
+  `git clean` // 移除新增的文件
+
+- 还原 文件 到 指定的 commit
+
+  `git restore --source=HEAD~1 file-name`
 
 ### commit 最佳实践
 
