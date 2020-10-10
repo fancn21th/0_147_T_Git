@@ -157,7 +157,19 @@
 
 - push
 
-  - git push <remote name> <local branch>:<remote branch>
+  - git push <remote name> <local branch name>:<remote branch name>
 
 - clone
-  - git clone [url | folder path] [folder anme]
+
+  - git clone [url | folder path] [folder name]
+
+- git branch -u [branch]
+
+  > checkout h
+
+  - git branch -u [remote name/branch name]
+
+- git fetch [remote name]
+
+- git pull
+  - 等于 git fetch; git merge
