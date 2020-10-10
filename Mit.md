@@ -110,4 +110,39 @@
 
 ### branch
 
+> 使用 js 文件来演示 不同 branch 的不同 功能 例如输出
+
+- git checkout [filename]
+
+  - 放弃修改
+
+- git branch [branch name]
+
+  - branch name is an reference
+  - 注意 不同的 commit 指向 相同的 commit | snapshot \*\*
+  - 关注 HEAD 的变化 以及 branch 的指向变化
+
+- git checkout -b [branch name]
+
+  - 等于 git branch [branch name] ; git checkout [branch name]
+
+- 关注 log 中分支的 显示形式
+
+- git merge
+
+  - git merge branch A
+    - Fast-forward \*\* // 聪明的实现
+  - git merge branch B
+
+- 冲突
+
+  - git mergetool
+  - 取消
+    - git merge --abort
+  - 完成
+    - git add [conflict file name] \*\* // 注意要先 add ?
+    - git merge --continue
+
 ### remote
+
+-
