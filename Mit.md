@@ -145,4 +145,19 @@
 
 ### remote
 
--
+> 使用 两个 console 演示不同的 repos
+
+- remote init
+
+  - git init --bare
+
+- remote add
+
+  - git remote add [name] [url | folder path]
+
+- push
+
+  - git push <remote name> <local branch>:<remote branch>
+
+- clone
+  - git clone [url | folder path] [folder anme]
